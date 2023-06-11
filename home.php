@@ -170,27 +170,29 @@ if (isset($_POST['logout'])) {
         </header>
 
         <div class="row">
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="box">
-              <img src="https://jadinikah.co/wp-content/uploads/2022/06/Katalog02.jpg" class="img-fluid" alt="">
-              <h3>Undangan Penikahan</h3>
+              <a href="#portfolio"><img src="https://jadinikah.co/wp-content/uploads/2022/06/Katalog02.jpg" class="img-fluid" alt="">
+                <h3>Undangan Penikahan</h3>
+              </a>
               <p></p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
             <div class="box">
-              <img src="https://jadinikah.co/wp-content/uploads/2022/06/Katalog02.jpg" class="img-fluid" alt="">
-              <h3>Undangan Khitanan</h3>
+              <a href="#portfolio"><img src="https://jadinikah.co/wp-content/uploads/2022/06/Katalog02.jpg" class="img-fluid" alt="">
+                <h3>Undangan Khitanan</h3>
+              </a>
               <p></p>
             </div>
           </div>
 
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
             <div class="box">
-              <img src="https://jadinikah.co/wp-content/uploads/2022/06/Katalog02.jpg" class="img-fluid" alt="">
-              <h3>Undangan Aqiqoh</h3>
+              <a href="#portfolio"><img src="https://jadinikah.co/wp-content/uploads/2022/06/Katalog02.jpg" class="img-fluid" alt="">
+                <h3>Undangan Aqiqoh</h3>
+              </a>
               <p></p>
             </div>
           </div>
