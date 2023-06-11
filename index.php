@@ -141,7 +141,7 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] == 'member') {
 
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="box">
-                            <a href="#portfolio"><img src="https://jadinikah.co/wp-content/uploads/2022/06/Katalog02.jpg" class="img-fluid" alt="">
+                            <a href="#portfolio"><img src="https://alexandra.bridestory.com/images/dpr_1.0,f_auto,fl_progressive,q_80,c_fill,g_faces,w_412/blogs/anyelir-studio-crop-ryfUvvb1D/rekomendasi-desain-undangan-pernikahan-digital-dari-vendor-terpercaya-3.jpg" class="img-fluid" alt="">
                                 <h3>Undangan Penikahan</h3>
                             </a>
                             <p></p>
@@ -150,7 +150,7 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] == 'member') {
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
                         <div class="box">
-                            <a href="#portfolio"><img src="https://jadinikah.co/wp-content/uploads/2022/06/Katalog02.jpg" class="img-fluid" alt="">
+                            <a href="#portfolio"><img src="https://undangandigimo.com/wp-content/uploads/2022/09/COM-TEMA-KHITAN-Tema-Jawa.webp" class="img-fluid" alt="">
                                 <h3>Undangan Khitanan</h3>
                             </a>
                             <p></p>
@@ -159,7 +159,7 @@ if (isset($_SESSION['user_id']) && $_SESSION['role'] == 'member') {
 
                     <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
                         <div class="box">
-                            <a href="#portfolio"><img src="https://jadinikah.co/wp-content/uploads/2022/06/Katalog02.jpg" class="img-fluid" alt="">
+                            <a href="#portfolio"><img src="https://down-id.img.susercontent.com/file/id-11134207-7qula-lh0p24wmushf77_tn" class="img-fluid" alt="">
                                 <h3>Undangan Aqiqoh</h3>
                             </a>
                             <p></p>

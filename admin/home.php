@@ -41,8 +41,10 @@
                                     <span class="info-box-icon bg-info"><i class="fas fa-user"></i></span>
 
                                     <div class="info-box-content">
-                                        <span class="info-box-text">Jumlah Member</span>
-                                        <span class="info-box-number"><?php echo $jumlah_user; ?></span>
+                                        <a href="index.php?section=member" style="text-decoration: none; color: black;">
+                                            <span class="info-box-text">Jumlah Member</span>
+                                        </a>
+                                            <span class="info-box-number"><?php echo $jumlah_user; ?></span>
                                     </div>
                                     <!-- /.info-box-content -->
                                 </div>

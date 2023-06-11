@@ -13,6 +13,12 @@ switch ($section) {
     case 'produkAdd':
         include('produkAdd.php');
         break;
+    case 'member':
+        include('member.php');
+        break;
+    case 'keuangan':
+        include('keuangan.php');
+        break;
     default:
         include('404.php');
         break;
