@@ -107,10 +107,26 @@ include "config/config.php";
               </a>
             </li>
             <li class="nav-item">
+              <a href="index.php?section=member" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>
+                  Member
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="index.php?section=produk" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
                   Produk
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="index.php?section=keuangan" class="nav-link">
+                <i class="nav-icon fas fa-money-check-alt"></i>
+                <p>
+                  laporan Keuangan
                 </p>
               </a>
             </li>

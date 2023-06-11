@@ -52,7 +52,7 @@
                         echo "<td><a href='" . $row['thumbnail'] . "'>Kunjungi thumbnail</a></td>";
                         //echo "<td>" . $row['kategori'] . "</td>";
                         echo "<td>";
-                        //echo "<a href='produkUpdate.php?id=" . $row['id'] . "' class='btn btn-primary btn-sm'>Edit</a>";
+                        echo "<a href='index.php?section=produkUpdate&id=" . $row['id'] . "' class='btn btn-primary btn-sm'>Edit</a>";
                         echo "<a href='produkDelete.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm ml-2'>Hapus</a>";
                         echo "</td>";
                         echo "</tr>";
