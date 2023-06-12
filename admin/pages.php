@@ -28,6 +28,9 @@ switch ($section) {
     case 'keuanganUpdate':
         include('keuanganUpdate.php');
         break;
+    case 'settings':
+        include('settings.php');
+        break;
     default:
         include('404.php');
         break;

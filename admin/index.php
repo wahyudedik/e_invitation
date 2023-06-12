@@ -86,7 +86,7 @@ include "config/config.php";
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
-            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            <img src="<?php echo $_SESSION['profile']; ?>" class="img-circle elevation-2" alt="User">
           </div>
           <div class="info">
             <a href="#" class="d-block"><?php echo $_SESSION['username']; ?></a>
@@ -130,6 +130,12 @@ include "config/config.php";
                 </p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="index.php?section=settings" class="nav-link">
+                <i class="nav-icon fas fa-tools"></i>
+                <p>Settings</p>
+              </a>
+            </li>
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
@@ -138,30 +144,30 @@ include "config/config.php";
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <?php include "pages.php"; ?>
-    </div>
-    <!-- /.content-wrapper -->
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-      <div class="p-3">
-        <h5>Title</h5>
-        <p>Sidebar content</p>
+    <div class=" content-wrapper">
+                  <?php include "pages.php"; ?>
       </div>
-    </aside>
-    <!-- /.control-sidebar -->
+      <!-- /.content-wrapper -->
 
-    <!-- Main Footer -->
-    <footer class="main-footer">
-      <!-- To the right -->
-      <div class="float-right d-none d-sm-inline">
-        Anything you want
-      </div>
-      <!-- Default to the left -->
-      <strong>Copyright &copy; 2023 <a href="">Administrator</a>.</strong> All rights reserved.
-    </footer>
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+        <div class="p-3">
+          <h5>Title</h5>
+          <p>Sidebar content</p>
+        </div>
+      </aside>
+      <!-- /.control-sidebar -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!-- To the right -->
+        <div class="float-right d-none d-sm-inline">
+          Anything you want
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2023 <a href="">Administrator</a>.</strong> All rights reserved.
+      </footer>
   </div>
   <!-- ./wrapper -->
 
