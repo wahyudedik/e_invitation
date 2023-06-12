@@ -86,7 +86,16 @@ include "config/config.php";
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
-            <img src="<?php echo $_SESSION['profile']; ?>" class="img-circle elevation-2" alt="User">
+            <?php
+            $id = $_SESSION['user_id'];
+            $query = "SELECT profile FROM users WHERE id = $id";
+            $result = $conn->query($query);
+            $row = $result->fetch_assoc();
+
+            // Generate the HTML code to display the image
+            $imageData = $row['profile'];
+            ?>
+            <img src="localfile/profile/<?php echo $imageData ?>" class="img-circle elevation-2" alt="User">
           </div>
           <div class="info">
             <a href="#" class="d-block"><?php echo $_SESSION['username']; ?></a>
@@ -145,29 +154,29 @@ include "config/config.php";
 
     <!-- Content Wrapper. Contains page content -->
     <div class=" content-wrapper">
-                  <?php include "pages.php"; ?>
+      <?php include "pages.php"; ?>
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+      <div class="p-3">
+        <h5>Title</h5>
+        <p>Sidebar content</p>
       </div>
-      <!-- /.content-wrapper -->
+    </aside>
+    <!-- /.control-sidebar -->
 
-      <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-        <div class="p-3">
-          <h5>Title</h5>
-          <p>Sidebar content</p>
-        </div>
-      </aside>
-      <!-- /.control-sidebar -->
-
-      <!-- Main Footer -->
-      <footer class="main-footer">
-        <!-- To the right -->
-        <div class="float-right d-none d-sm-inline">
-          Anything you want
-        </div>
-        <!-- Default to the left -->
-        <strong>Copyright &copy; 2023 <a href="">Administrator</a>.</strong> All rights reserved.
-      </footer>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="float-right d-none d-sm-inline">
+        Anything you want
+      </div>
+      <!-- Default to the left -->
+      <strong>Copyright &copy; 2023 <a href="">Administrator</a>.</strong> All rights reserved.
+    </footer>
   </div>
   <!-- ./wrapper -->
 

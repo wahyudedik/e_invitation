@@ -25,7 +25,7 @@
         }
 
         // Batasi ukuran file
-        if ($_FILES["profile_picture"]["size"] > 500000) {
+        if ($_FILES["profile_picture"]["size"] > 5000000) {
             echo "Maaf, ukuran file terlalu besar.";
             $uploadOk = 0;
         }
@@ -53,7 +53,10 @@
                 // Mengeksekusi query untuk memperbarui data pengguna dengan nama file gambar baru
                 $sql = "UPDATE users SET profile = '$newFileName' WHERE id = '$id'"; // Ganti id dengan id pengguna yang sesuai
                 if ($conn->query($sql) === TRUE) {
-                    echo "Data pengguna berhasil diperbarui.";
+                    echo '<script type="text/javascript">';
+                    echo 'alert("Data profile berhasil diupdate.");';
+                    echo 'window.location.href = "index.php?section=keuangan";';
+                    echo '</script>';
                 } else {
                     echo "Terjadi kesalahan saat memperbarui data pengguna: " . $conn->error;
                 }
@@ -70,7 +73,10 @@
         // Mengeksekusi query untuk menyimpan nama pengguna ke dalam database
         $sql = "UPDATE users SET username = '$name' WHERE id='$id'";
         if ($conn->query($sql) === TRUE) {
-            echo "Nama pengguna berhasil disimpan.";
+            echo '<script type="text/javascript">';
+            echo 'alert("Data nama berhasil diupdate.");';
+            echo 'window.location.href = "index.php?section=keuangan";';
+            echo '</script>';
         } else {
             echo "Terjadi kesalahan saat menyimpan nama pengguna: " . $conn->error;
         }
@@ -105,7 +111,15 @@
                             <h3 class="card-title">Profile Picture</h3>
                         </div>
                         <div class="card-body">
-                            <img src="<?php echo $_SESSION['profile']; ?>" class="img-fluid mb-2" alt="Profile">
+                            <?php
+                            $query = "SELECT profile FROM users WHERE id = $id";
+                            $result = $conn->query($query);
+                            $row = $result->fetch_assoc();
+
+                            // Generate the HTML code to display the image
+                            $imageData = $row['profile'];
+                            ?>
+                            <img src="localfile/profile/<?php echo $imageData ?>" class="img-fluid mb-2" alt="Profile">
                             <form method="POST" action="" enctype="multipart/form-data">
                                 <input type="file" name="profile_picture" class="form-control-file">
                                 <button type="submit" class="btn btn-primary mt-2">Upload</button>
