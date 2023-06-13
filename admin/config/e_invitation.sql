@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2023 at 02:05 PM
+-- Generation Time: Jun 13, 2023 at 10:02 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -83,16 +83,17 @@ CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `role` enum('admin','member') NOT NULL
+  `role` enum('admin','member') NOT NULL,
+  `profile` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`) VALUES
-(1, 'wahyu dedik dwi astono', 'wdedyk@gmail.com', '$2y$10$MZl969HKvnb6zaWtN0p4vON11bSJSwNLCd3OyGdlAjkkft24w1eR6', 'member'),
-(2, 'mifthakul jannah', 'wahyu@gmail.com', '$2y$10$cbRRMkvPs9z3TRhpa5XTJefmwiBXRKrI25nIZwFY8aRsrlHamgu4m', 'admin');
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`, `profile`) VALUES
+(1, 'wahyu dedik dwi astono', 'wdedyk@gmail.com', '$2y$10$MZl969HKvnb6zaWtN0p4vON11bSJSwNLCd3OyGdlAjkkft24w1eR6', 'member', ''),
+(2, 'mifthakul jannah wahyu', 'wahyu@gmail.com', '$2y$10$cbRRMkvPs9z3TRhpa5XTJefmwiBXRKrI25nIZwFY8aRsrlHamgu4m', 'admin', 'New Game Epsiodes Every Time.png');
 
 --
 -- Indexes for dumped tables
